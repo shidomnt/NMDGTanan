@@ -230,15 +230,7 @@ function IP() {
               <div className='col-1 col-md-2'>
               </div>
             </div>
-            {/* <div className='row'>
-              <div className='col-3 col-md-4'>
-              </div>
-              <div className='col-8 col-md-3'>
-                <Camera sendFile={uploadImage} />
-              </div>
-              <div className='col-1 col-md-3'>
-              </div>
-            </div> */}
+     
           </div>
         </div>
       </div>
