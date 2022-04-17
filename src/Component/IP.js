@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react'
+import ReactDOM from "react-dom";
+
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import App from './App';
@@ -6,6 +8,9 @@ import { Icon } from 'semantic-ui-react';
 import Header from '../Layout/Header';
 import List from './List';
 import Lichtruc from './Lichtruc';
+
+
+
 
 function IP() {
   //creating IP state
@@ -60,6 +65,7 @@ function IP() {
       // console.log(hienthi)
       setCheck1('OK')
     }
+
     else {
       setCheck1('BAD')
     }
@@ -131,11 +137,16 @@ function IP() {
       <div className="App" style={{ display: hienthi }}>
         <h2>Xin chào!</h2>
         <h2>Chấm công NMĐG Tân Ân 1!</h2>
+        
         <h4>Lịch trực nhà máy điện gió Tân Ân 1: 
+         
+
         <button className='btn btn-link' onClick={hienthilichtrucf}> Ẩn/Hiển thị</button>
         </h4>
         
         <div id='Hienthilichtruc' style={{ display: hienthilichtruc }}> 
+      
+      
         <Lichtruc />
         </div>
         

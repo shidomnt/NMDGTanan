@@ -16,7 +16,6 @@ export default class Home extends Component {
                         <div className='container'>
                             <Switch>
                                 <Route exact path="/" component={IP} />
-                            
                                 <Route exact path="/Lichtruc" component={Lichtruc} />
                                 <Route exact path= "*" component={NotFound}></Route>
                             </Switch>
