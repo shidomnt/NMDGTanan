@@ -4,16 +4,16 @@ import allActions from './actions'
 
 
 const Change = () => {
-  const counter = useSelector((state) => state.counter)
-  const currentUser = useSelector((state) => state.currentUser)
+  const counter = useSelector(state => state.counter)
+  const currentUser = useSelector(state => state.currentUser)
 
   const dispatch = useDispatch()
 
   const user = {name: "Rei"}
 
-  useEffect(() => {
-    dispatch(allActions.userActions.setUser(user))
-  }, [])
+  // useEffect(() => {
+  //   dispatch(allActions.userActions.setUser(user))
+  // }, [])
 
   return (
     <div className="App">

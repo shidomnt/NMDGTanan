@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import Home from './Component/Home';
-import { createStore } from 'redux'
 import rootReducer from './reducers'
-import { Provider } from 'react-redux'
 import Change from './Change';
 
 const store = createStore(
   rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
 )
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Change />
-      {/* <Home/> */}
+      {/* <Change /> */}
+      <Home/>
     </Provider>,
 
 
