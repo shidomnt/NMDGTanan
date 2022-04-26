@@ -5,6 +5,7 @@ import IP from './IP';
 import Header from '../Layout/Header'
 import App from './App';
 import Lichtruc from './Lichtruc';
+import Persons from './Persons';
 
 export default class Home extends Component {
     render() {
@@ -17,6 +18,7 @@ export default class Home extends Component {
                             <Switch>
                                 <Route exact path="/" component={IP} />
                                 <Route exact path="/Lichtruc" component={Lichtruc} />
+                                <Route exact path="/Danhsach" component={Persons} />
                                 <Route exact path= "*" component={NotFound}></Route>
                             </Switch>
                         </div>
