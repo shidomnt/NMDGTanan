@@ -13,9 +13,11 @@ export default class Header extends Component {
                             aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <Link to="/Danhsach">
+                        <button className="btn btn-primary" >
+                        <Link to="/Danhsach" style={{color: 'inherit', textDecoration: 'none'}}>
                             Danh sach
                         </Link>
+                        </button>
                         {/* <a href="/Lichtruc">Lịch trực </a>
                         <a href="/">Chấm công </a> */}
                     </div>
